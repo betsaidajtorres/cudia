@@ -5,8 +5,12 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;
-
+    height: 15em;
     margin: 1.8% auto;
+}
+.logo-main{
+    width: 200px;
+    padding: 25px;
 }
 #menu{
     width: 40%;
@@ -27,6 +31,8 @@ body{
 .container-redes{
     width: 200px;
     text-align: right;
+    display: flex;
+    justify-content: space-evenly;
 }
 .logo-redes{
     width: 50px;
@@ -34,12 +40,14 @@ body{
     object-fit: cover;
 }
 .slider{
-    width: 40%;
+    width: 30%;
     margin: 0;
+    display: flex;
+    align-items: center;
 }
 .carousel-item img{
-    height: 200px;
     object-fit: cover;
+    padding: 15px;
 }
 .img-menu{
     width: 100%;
@@ -55,10 +63,11 @@ body{
 
 footer{
     width: 100%;
-    height: 5%;
+    height: 8%;
     position: fixed;
     bottom: 0;
     background-color: #F2B279;
+    display: flex;
 }
 .footer{
     width: 40%;
