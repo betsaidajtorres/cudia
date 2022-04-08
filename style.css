@@ -5,7 +5,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 15em;
+    height: 12em;
     margin: 1.8% auto;
 }
 .logo-main{
@@ -92,4 +92,50 @@ footer{
 }
 .logo-footer{
     width: 100px;
+}
+
+.mc-center{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.page-title{
+    color: #593F42;
+}
+.btn-outline-secondary{
+    color: white;
+    border-color: #D97855;
+    background-color: #D97855;
+}
+.btn-outline-secondary:hover{
+    background-color: #593F42;
+    color: white;
+}
+.form-control{
+    border-color: #D97855;
+}
+.center-content{
+    margin: 5% auto;
+    display: flex;
+}
+.grid-menu{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". . . ."
+        ". . . .";
+    align-content: space-evenly;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.grid-menu img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
 }
