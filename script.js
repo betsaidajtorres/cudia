@@ -1,4 +1,2 @@
-var showdown = require('showdown'),
-    converter = new showdown.Converter(),
-    text = '# hello, markdown!',
-    html = converter.makeHtml(text);
+var md = new Remarkable();
+console.log(md.render('# Remarkable rulezz!'));
