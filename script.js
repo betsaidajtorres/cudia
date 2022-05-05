@@ -24,7 +24,7 @@ function autocomplete(event) {
     inputElem.value = "";
     return;
   }
-  filteredResults = provincias.filter((provincia) => {
+  filteredResults = provincias.data.filter((provincia) => {
     return provincia.attributes.nombre
       .toLowerCase()
       .startsWith(value.toLowerCase());
@@ -33,7 +33,6 @@ function autocomplete(event) {
   resultsElem.innerHTML = filteredResults
     .map((result, index) => {
       const isSelected = index === 0;
-      w;
       return `
         <li
           id='autocomplete-result-${index}'
@@ -54,47 +53,14 @@ function handleResultClick() {
     selectItem(event.target);
   }
 }
-function handleResultKeyDown(event) {
-  const { key } = event;
-  const activeItem = this.getItemAt(activeIndex);
-  if (activeItem) {
-    activeItem.classList.remove("selected");
-    activeItem.setAttribute("aria-selected", "false");
-  }
-  switch (key) {
-    case "Backspace":
-      return;
-    case "Escape":
-      hideResults();
-      inputElem.value = "";
-      return;
-    case "ArrowUp": {
-      if (activeIndex === 0) {
-        activeIndex = filteredResults.length - 1;
-      }
-      activeIndex--;
-      break;
-    }
-    case "ArrowDown": {
-      if (activeIndex === filteredResults.length - 1) {
-        activeIndex = 0;
-      }
-      activeIndex++;
-      break;
-    }
-    default:
-      selectFirstResult();
-  }
-  console.log(activeIndex);
-  selectResult();
-}
+
 function selectFirstResult() {
   activeIndex = 0;
 }
 
 function selectResult() {
   const value = inputElem.value;
-  const autocompleteValue = filteredResults[activeIndex].name.common;
+  const autocompleteValue = filteredResults[activeIndex].attributes.nombre;
   const activeItem = this.getItemAt(activeIndex);
   if (activeItem) {
     activeItem.classList.add("selected");

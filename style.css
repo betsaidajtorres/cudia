@@ -146,16 +146,7 @@ footer{
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 }
 
-.mapa-prueba{
-    width: 500px;
-    height: 500px;
-} 
-.mapa-prueba img{
-    object-fit: cover;
-}
-.mapa-prueba map{
-    object-fit: cover;
-}
+
 .page-title {
   width: 80%;
 
@@ -186,36 +177,45 @@ height: auto;
   }
   .container {
     height:50%;
-    width: 5%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+   margin-top: -75px;
    
   }
   form {
     display: flex;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     position: relative;
+    height: 50px;
+    width: 800px;
+    
   }
   input, button {
+    width: 500px;
     border: none;
     background: white;
     margin: 0;
+    color: #D97855;
   }
   input {
-    font-size: 16px;
+    width: 30000px;
+    font-size: 22px;
     padding: 10px 12px;
+    text-align: center;
+    color: #D97855;
   }
   button {
     padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
   }
-  svg {
+  .container img {
     width: 18px;
-    height: 18;
-    fill: black;
+    height: 18px;
+   
   }
   ul {
     position: absolute;
@@ -229,6 +229,7 @@ height: auto;
     transition: none;
     padding: 0;
     border: 1px solid #bfc8c9;
+    color: #D97855;
   }
   ul li {
     padding: 6px 12px;
@@ -251,11 +252,6 @@ height: auto;
 
 .boton {
   padding: 10px; 
-  
-    
-  }
-  .boton:hover {
-    background-color: #c2b8b4;
-
+     
   }
  
