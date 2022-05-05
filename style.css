@@ -18,10 +18,10 @@ body{
 .main-menu{
     width: 10%;
     height: 100%;
-    display: inline-flex;
+    list-style:none;
 }
 .logo-main{
-    width: 100px;
+    width: 80px;
     margin: 0 auto;
 }
 .slider{
@@ -35,9 +35,13 @@ body{
     width: 50%;
 }
 .carousel-item img{
+    width: 0 auto;
+    height: 300px;
     object-fit: cover;
+    margin-top: 50px;
     padding: 15px;
 }
+
 #menu{
     width: 40%;
     margin: 0 auto;
