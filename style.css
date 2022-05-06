@@ -1,22 +1,69 @@
 body{
     font-family: 'Outfit', sans-serif;
 }
-.main-content{
+
+.container-redes{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    height: 12em;
-    margin: 1.8% auto;
-}
-.logo-main{
-    width: 200px;
-    padding: 25px;
+    height: 70px;
+    padding: 10px 0;
+    display: inline-block;
+    text-align: right;
 }
 
+.logo-redes{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    object-fit: cover;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+.main-menu{
+    width: 10%;
+    height: 100%;
+    margin-left: 30px;
+}
+.logo-main{
+    width: 100px;
+    margin: 0 auto;
+}
+.page-title {
+    width: 80%;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #593F42;
+}
+
+.logo-main{
+    width: 100px;
+    margin: 0 auto;
+    margin-left: 4%;
+    margin-bottom: -5%;
+}
+.slider{
+    width: 80%;
+    height: 200px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.carrusel{
+    width: 50%;
+}
+.carousel-item img{
+    width: 0 auto;
+    height: 260px;
+    object-fit: cover;
+    margin-top: 50px;
+    padding: 15px;
+}
 #menu{
     width: 40%;
     margin: 0 auto;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     display: grid; 
     grid-template-columns: 0.5fr 0.5fr; 
     grid-template-rows: 140px 140px 140px 140px;
@@ -29,38 +76,12 @@ body{
     align-content: space-evenly; 
 }
 
-.container-redes{
-    width: 200px;
-    text-align: right;
-    display: flex;
-    justify-content: space-evenly;
-}
-.container-redes a{
-    width: 50px;
-    height: 50px;
-}
-.logo-redes{
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-}
-.slider{
-    width: 30%;
-    margin: 0;
-    display: flex;
-    align-items: center;
-}
-.carousel-item img{
-    width: 0 auto;
-    height: 200px;
-    object-fit: cover;
-    padding: 15px;
-}
 .img-menu{
     width: 100%;
     height: 140px;
     object-fit: cover;
 }
+
 .content{
     width: 100%;
     display: flex;
@@ -72,6 +93,7 @@ body{
 .content:hover{
     background-color: #D97855;
     color: white;
+
 }
 
 footer{
@@ -99,15 +121,23 @@ footer{
 
 .mc-center{
     width: 25%;
+    margin-left: 35%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
 }
+
 .page-title{
     color: #593F42;
     text-align: center;
-    margin-top: 60px;
+    margin-bottom: 8%;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
 }
 .btn-outline-secondary{
     color: white;
@@ -139,6 +169,12 @@ footer{
     align-items: center;
     justify-content: center;
 }
+
+.grid-menu a {
+    width: 200px;
+    height: 200px;
+}
+
 .grid-menu img{
     height: 200px;
     width: 200px;
@@ -160,6 +196,7 @@ footer{
 }
 
 .linkedin {
+    text-decoration: none;
     display: flex;
     align-content: stretch;
     justify-content: space-evenly;
@@ -167,8 +204,29 @@ footer{
 }
 
 .image {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 20px;
     margin-right: 15px;
+}
+
+.map {
+    width: 0 auto;
+    height: 600px;
+    margin-bottom: 100px;
+    display: flex;
+    
+}
+
+.text {
+    width: 75%;
+    height: 100%;
+    text-align: justify;
+    margin-left: 150px;
+    margin-right: 50px;
+    margin-bottom: 10%;
+}
+
+#titulo {
+    margin-top: -50px;
 }
