@@ -13,14 +13,10 @@
       crossorigin="anonymous"
     />
     <!--Map Highlight-->
-    <!-- <script src="jquery/jquery/dist/jquery.slim.min.js"></script>
-    <script src="map_plugin/jquery.maphilight.min.js"></script> -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="jquery.maphilight.js"></script>
-    <script type="text/javascript">$(function() {
-      $('.map').maphilight();
-      
-  });</script>
+    <!-- <script src="jquery/jquery/dist/jquery.slim.min.js"></script> -->
+    <!-- <script src="map_plugin/jquery.maphilight.min.js"></script>  -->
+    
+    
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -74,13 +70,10 @@
         </div>
         <!-- container-fluid.// -->
       </nav>
-      
-
-
-        <img id="img_ID" class="map" src="/images/MapaEspaña-Cudia.png" usemap="#map" border="0" width="420" height="400" alt="" />
-
     
-    <map id="map_ID" name="map">
+    <img id="img_ID" class="map" src="/images/MapaEspaña-Cudia.png" usemap="#map" border="0" width="420" alt="" />
+
+    <map id="map_ID"  name="map">
       <!--Canarias-->
       <area target="_blank" alt="Gran Canaria (Islas Canarias)" title="gran_canaria" href="javascript:;" coords="621,2304,642,2292,652,2267,670,2267,698,2277,704,2295,711,2317,708,2339,686,2357,664,2360,639,2348,627,2323" shape="poly">
       <area target="_blank" alt="Fuerteventura (Islas Canarias)" title="fuerteventura" href="javascript:;" coords="883,2283,922,2298,932,2249,942,2218,962,2189,977,2145,991,2140,1006,2150,1006,2189,1001,2224,996,2249,937,2268,912,2273,937,2268,962,2254" shape="poly">
@@ -151,5 +144,14 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="jquery.maphilight.min.js"></script>
+
+    <script type="text/javascript">
+    $(function() {
+      $('.map').maphilight();
+      
+  });</script>
   </body>
 </html>
