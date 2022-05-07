@@ -1,2 +1,2 @@
-var md = new Remarkable();
-console.log(md.render('# Remarkable rulezz!'));
+var info = new Remarkable();
+appendchild.textcontent(md.render('# Remarkable rulezz!'));

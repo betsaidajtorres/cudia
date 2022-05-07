@@ -153,13 +153,54 @@ footer{
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 }
 
-.mapa-prueba{
-    width: 500px;
-    height: 500px;
-} 
-.mapa-prueba img{
-    object-fit: cover;
+.popup-wrapper {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 	
+    display: none;
 }
-.mapa-prueba map{
-    object-fit: cover;
+ 
+.popup {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 100%;
+    max-width: 40%;
+    background: white;
+    margin: 15% auto;
+    padding: 20px;
+    position: relative;
+}
+ 
+.popup a {
+    background: #D97855;
+    color: white;
+    text-decoration: none;
+    padding: 5px 0px;
+    text-align: center;
+    display: block;
+
+}
+ 
+.popup a:hover {
+    background: #F2B279;
+    color: #593F42;
+    transition: all 0.2s;
+}
+#lista{
+    text-align: left;
+    width: 100%;
+}
+#lista tr:nth-child(even){background-color: #fddfc4}
+#lista tr th{
+    font-family: 'Outfit', sans-serif;
+}
+.popup-close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
 }
