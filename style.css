@@ -199,11 +199,15 @@ footer{
 }
 
 .linkedin {
-    text-decoration: none;
     display: flex;
     align-content: stretch;
     justify-content: space-evenly;
     margin-bottom: 100px;
+}
+
+.linkedin a {
+    text-decoration: none;
+    color:#593F42;
 }
 
 .image {
