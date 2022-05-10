@@ -211,8 +211,8 @@ footer{
 }
 
 .image {
-    width: 120px;
-    height: 120px;
+    width: 135px;
+    height: 135px;
     border-radius: 20px;
     margin-right: 15px;
 }
@@ -232,4 +232,15 @@ footer{
     margin-left: 180px;
     margin-right: 50px;
     margin-bottom: 8%;
+}
+
+.patrocin {
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.patrocin img {
+    width: 15%;
+    height: 80px;
 }
