@@ -15,7 +15,7 @@ function showpopup(comunidad) {
     });
 
     var settings = {
-        "url": "https://cudiaweb.herokuapp.com/api/protectoras?filters[$and][0][comunidad][$eq]=" + comunidad,
+        "url": "https://cudiaweb.herokuapp.com/api/veterinarios?filters[$and][0][comunidad][$eq]=" + comunidad,
         "method": "GET",
         "timeout": 0,
     };
