@@ -147,8 +147,7 @@ footer{
 }
 
 .page-title {
-  width: 80%;
-
+width: 80%;
 padding-bottom: 50px;
 text-align: center;
 color: #593F42;
@@ -251,16 +250,16 @@ height: auto;
    
 }
 .page-title h2 {
-  padding-left: 324px;
+  padding-left: 30%;
 }
 .boton {
   padding: 10px;     
   }
 
 .page-selection {
-  display: flex;
-  align-items: baseline;
-margin-right:  158px;
+ display: flex;
+ width: 30%;
+ margin: 0 auto;
 }
 .pawsmall {
   width: 30px;
@@ -288,9 +287,6 @@ margin-right:  158px;
   width: 50%;
   margin: 0 50px;
 }
-
-
-
 .container-dates {
   height:50%;
   width: 100%;
@@ -339,15 +335,10 @@ align-items: center;
     display: flex;
     justify-content: center;
   margin-top: 85px;
-  margin-left: 20px;
-  margin-left:540px;
+  
+  margin-left:35%;
   }
-  .text-transportes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #D97855;
-    }
+  
     .text-alojamientos a {
       color: #ffffff;
       background-color: #D97855;
@@ -355,13 +346,76 @@ align-items: center;
       padding: 5px;   
       border-radius: 6px;
       display: flex;
+      width: 20%;
+      justify-content: center;
   
     }
     .text-alojamientos {
+    display: flex;
+    width: 50%;
+    margin: 0 20%;
+    color: #593F42;
+    flex-direction: column;
+    margin-bottom: 10%;
+    }
+    .text-transportes {
       display: flex;
       flex-direction: column;
-      align-items: center
-    }
+      width: 50%;
+      margin: 0 20%;
+      color: #593F42;
+      }
     .datos-transportes {
       display: flex;
     }
+    .filter-content h3 {
+      display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 20%;
+  color: #593F42;
+    }
+.text-car {
+      display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 20%;
+  color: #593F42;
+  text-align: justify;
+}
+.text-tren   {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 20%;
+  color: #593F42;
+  text-align: justify;
+} 
+.text-avion {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 20%;
+  color: #593F42;
+  text-align: justify;
+}
+.planing  {
+  color: #ffffff;
+  background-color: #D97855;
+  text-decoration: none;
+  padding: 5px;   
+  border-radius: 6px;
+  width: 20%;
+  justify-content: center;
+  margin-bottom: 40%;
+
+     
+}
+.number {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 10%;
+}
+
+
