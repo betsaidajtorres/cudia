@@ -12,7 +12,6 @@ async function init() {
       throw new Error(`Error: ${response.status}`);
     }
     const data = await response.json();
-    console.log(data);
     printData(data.data);
   } catch (error) {
     console.log(error);
@@ -20,25 +19,25 @@ async function init() {
 }
 
 function printData(data) {
-  const title = document.getElementById("transportes");
-  const resultados = document.getElementById("resultados");
+  const avion = document.getElementById("avion");
+  const coche = document.getElementById("coche");
+  const tren = document.getElementById("tren");
 
   for (const info of data) {
-    const tipo = document.createElement("h4");
-    tipo.textContent = "Empresas de alquiler de coches";
-    resultados.appendChild(tipo);
-    if (data.attributes.tipo === "coche") {
+    if (info.attributes.tipo === "avion") {
       const texto = document.createElement("p");
       texto.textContent = info.attributes.nombre;
-      resultados.appendChild(texto);
+      avion.appendChild(texto);
     }
-    const tipo2 = document.createElement("h4");
-    tipo2.textContent = "Aerolíneas";
-    resultados.appendChild(tipo2);
-    if (data.attributes.tipo === "avion") {
+    if (info.attributes.tipo === "coche") {
       const texto = document.createElement("p");
       texto.textContent = info.attributes.nombre;
-      resultados.appendChild(texto);
+      coche.appendChild(texto);
+    }
+    if (info.attributes.tipo === "tren") {
+      const texto = document.createElement("p");
+      texto.textContent = info.attributes.nombre;
+      tren.appendChild(texto);
     }
   }
 }
@@ -55,7 +54,7 @@ async function inicio() {
       throw new Error(`Error: ${response.status}`);
     }
     const datos = await response.json();
-    console.log(datos);
+
     printalojamientos(datos.data);
   } catch (error) {
     console.log(error);

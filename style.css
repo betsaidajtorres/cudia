@@ -277,26 +277,19 @@ margin-right:  158px;
 }
 .animalweight {
   display: flex;
-  position: absolute;
-  top: 302px;
-  left:550px;
-  transform: translate(-50%, 19px);
+  width: 60%;
+  height: 200px;
+  margin: 0 auto;
 
 }
-.info-weight {
+.botones {
   display: flex;
-  justify-content: space-between;
-  margin-left: 198px;
-  margin-right: 265px;
-  padding-left: 30px;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 50px;
 }
-.info-weight h3 {
- display: flex;
- margin-top: 95px;
- justify-content: center;
- margin-left: 10px;
 
-}
+
 
 .container-dates {
   height:50%;

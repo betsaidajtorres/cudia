@@ -54,24 +54,21 @@
     <!--Opciones-->
 
     <div class="animalweight">
-        <button type='button' id="weight" onclick="saveweight()" value="menor igual 8 kg">
+        <button class="botones weight" type='button' onclick="peque()" value="menor igual 8 kg">
             <img class="pawsmall" src="images/paw-black-shape (1).png" alt="">
+            <h3> ≤ 8 kg</h3>
+        </button>
+        <button class="botones weight" type='button' onclick="medio()" value="menor igual 10 kg">
+            <img class=pawmedium src="images/paw-black-shape (1).png" alt="">
+            <h3> ≤ 10 kg</h3>
         </button>
 
-        <button type='button' id="weight" onclick="saveweight()" value="menor igual 10 kg">
-            <img clas=pawmedium src="images/paw-black-shape (1).png" alt="">
-        </button>
-
-        <button type='button' id="number" onclick="saveweight()" value="mas de 10 kg">
+        <button class="botones weight" type='button' onclick="grande()" value="mas de 10 kg">
             <img class=pawbig src="images/pawbig(3).png" alt="">
+            <h3> > 10 kg</h3>
         </button>
+    </div>
 
-    </div>
-    <div class="info-weight">
-        <h3> ≤ 8 kg</h3>
-        <h3> ≤ 10 kg</h3>
-        <h3> > 10 kg</h3>
-    </div>
 
     <script src="viajes3.js"></script>
     <footer>
