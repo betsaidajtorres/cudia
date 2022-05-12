@@ -54,12 +54,12 @@
     <!--Buscador Ciudades-->
     <div class="container">
         <form class="cities">
-            <input placeholder="¿Qué ciudad os gustaría visitar?" aria-label='¿Qué ciudad os gustaría visitar'
+            <input id="city" placeholder="¿Qué ciudad os gustaría visitar?" aria-label='¿Qué ciudad os gustaría visitar'
                 aria-autocomplete='both' aria-controls='autocomplete-results'>
-            <button type='submit' aria-label='Search'>
-                <img src="images/lupa (1).png" alt=""> <a target="_blank" class="boton" href="viajes1.html"> </a>
+            <button type='button' onclick="savecity()">
+                <img src="images/lupa (1).png" alt="search">
             </button>
-            <ul id='autocomplete-results' role='listbox' aria-label='¿Qué ciudad os gustaría visitar'>
+            <ul id='autocomplete-results' role='listbox' aria-label='¿Qué ciudad os gustaría visitar?'>
             </ul>
         </form>
     </div>
@@ -72,7 +72,7 @@
         </div>
     </footer>
 
+    <script src="viajes.js"></script>
 </body>
-<script src="./script.js"></script>
 
 </html>

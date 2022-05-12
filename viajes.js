@@ -92,3 +92,7 @@ function getItemAt(index) {
 }
 
 init();
+function savecity() {
+  localStorage.setItem("city", document.getElementById("city").value);
+  window.location.href = "/viajes1.html";
+}
