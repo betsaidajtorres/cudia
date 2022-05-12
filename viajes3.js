@@ -4,7 +4,7 @@ function peque() {
   saveweight();
 }
 function medio() {
-  peso = "menor igual 10 kg";
+  peso = "menor igual 10kg";
   saveweight();
 }
 function grande() {
